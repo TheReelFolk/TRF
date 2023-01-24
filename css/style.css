@@ -123,6 +123,9 @@ a:hover {
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+
 }
 
 /* background color setting */
