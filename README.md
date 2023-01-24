@@ -1,22 +1,4 @@
-# The Monkees Website
-
-This website offers concert bookers, existing fans and potential fans of The Monkees a way to see and hear songs from the bands back catalog and find out about any new material as it becomes available. 
-
-The site provides information and links to buy tickets for the bands upcoming concerts as well as a method of booking the band for private events. Fans can learn about the individual members of The Monkees through the band section and provides links to the bands social media and a newsletter sign-up option.
- 
-## UX
-
-### User Stories
-
-Before beginning development on the site, several user stories were created to determine who a visitor to the site could be and what they might want from the site:
-
-- "As an existing fan of The Monkees, I want to be able to quickly access the bands    existing output, discover any new material and upcoming concert dates so that I can enjoy my favourite Monkees songs."
-
-- "As an existing fan of The Monkees, I want to direct people, whom I want to introduce to the band, to a website where they can read about the band members, listen to The Monkees music, watch their music videos, see art and photos of the band and find out about any upcoming concert dates so that they can become fans."
-
-- "As a potential fan of The Monkees, I want to be able to go to a website where I can read about the band members, listen to The Monkees music, watch their music videos, see art and photos of the band and find out about any upcoming concert dates so that I can become a fan."
-
-- "As a potential concert booker, I want to be able to go to a website where I can read about the band members, listen to The Monkees music, watch their music videos, see art and photos of the band, find out about any upcoming concert dates so that I can decide if I want to send a booking form to the band through the website."
+# TheReelFolk.com
 
 ### Design
 
@@ -35,9 +17,8 @@ A site map drawn up prior to start of the websites development can be found in t
 3. Users can find information about upcoming releases.
 4. Users can find information and links to purchase tickets for upcoming concerts.
 5. Users can book the band for private events.
-6. Users can find information about each member of The Monkees.
-7. Users can find links to the bands social media and sign up for a newsletter.
-8. Users can view a gallery containing images related to The Monkees (e.g. album covers).
+6. Users can find local Irish Session information 
+
 
 ## Technologies Used
 
@@ -74,22 +55,12 @@ Similiarly as the images I had been provided with were in a variety of different
 
 ## Deployment
 
-The website has been deployed to Github pages and can be found at: <https://cianhub.github.io/the-monkees-website/>
+The website has been deployed to domain.com a the url TheReelFolk.com
 
-## Installation
-
-1. Clone the repository.
-2. Open index.html in your web browser of choice.
 
 ## Credits
 
-### Content
-
-- The text for 'Band' section was copied from the [Wikipedia article - The Monkees](https://en.wikipedia.org/wiki/The_Monkees)
-
-### Media
-
-- The media files used in this website were provided by the Code Institute
+Sofrona Zane
 
 ### Acknowledgements
 
