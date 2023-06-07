@@ -53,7 +53,7 @@ a:hover {
 
 .callout-container {
     height: 100vh;
-    background-image: url('../images/car.jpg');
+    background-image: url('../images/Trio6.jpg');
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -74,7 +74,20 @@ a:hover {
 
 }
 
+/* section divider */
+.section-divider {
+    color: #227227;
+    width: 100%;
+    height: 20px;
+    display: flex;
+    flex-direction: row;
+    float: right;
+}
+
 /* background image settings */
+.mission-container{
+    background-color: white;
+}
 
 .gigs-container {
     background-image: url("../images/posed.jpg");
@@ -114,7 +127,7 @@ a:hover {
 /* background color setting */
 
 .gallery-container {
-    background-image: url("../images/action.jpg");
+    background-image: url("../images/Trio4.jpg.jpg");
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -564,6 +577,9 @@ p .section-text {
     color: black;
 }
 
+hr.block-divider{
+    margin:auto;
+}
 /* styles newsletter subscription */
 
 #signup.contact-form {
