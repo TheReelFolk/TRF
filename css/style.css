@@ -15,6 +15,7 @@ body {
 
     font-family: "Lora-Regular";
     font-weight: 300;
+    overflow-x: hidden;
 
 }
 
@@ -52,7 +53,7 @@ a:hover {
 /* base code from whiskey drop module, altered to fit project*/
 
 .callout-container {
-    height: 100vh;
+    height: auto;
     background-image: url('../images/Trio6.jpg');
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -90,16 +91,8 @@ a:hover {
 }
 
 .gigs-container {
-    background-image: url("../images/posed.jpg");
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    height: 100%;
-    position: relative;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-color: rgba(0, 0, 0, 0.6);
+    align-items: center;
 }
 
 /* base code from whiskey drop module, altered to fit project*/
@@ -114,32 +107,11 @@ a:hover {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-/* background image settings for video section */
-
-.video-container {
-    background-image: url("../images/fence.JPG");
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    background-position: center center;
-}
-
 /* background color setting */
 
 .gallery-container {
-    background-image: url("../images/Trio4.jpg.jpg");
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    height: 100%;
-    position: relative;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    display: grid;
-    grid-template-columns: auto auto auto auto ;
-
+    background-color: rgba(0, 0, 0, 0.6);
+    align-items: center;
 }
 
 /* background color setting */
@@ -212,7 +184,7 @@ a:hover {
 /* sets font type for link items in mobile nav */
 
 .navbar a {
-    font-family: "Ti_Serif Regular";
+    font-family: "Ti_Serif";
 }
 
 /*alterations made to Bootstraps navbar-brand class for project specific navbar set up on mobile */
@@ -300,6 +272,8 @@ a:hover {
 
 .text-title {
     font-family: "Ti_Serif";
+    margin-left: 15%;
+    margin-right: 15%;
 }
 
 /* basic font settings */
@@ -453,24 +427,34 @@ p .section-text {
 /*......................................................... Gallery Section */
 
 
-
-.slideshow
+.slideshow-container
 {
-    height: 640px;
-    width: 950px;
-    padding: .25em 0;
+    height: auto !important;
+    max-width: 60%;
     overflow: hidden;
+    margin-bottom: 2%;
 }
 
+.slides {
+    display: none;
+}
 
-
-.slideshow div
-{
+.slides img {
+    aspect-ratio: 16/9;
+    width: 100%;
+    height: auto;
+    display: block;
     position: relative;
-
 }
 
-.slideshow div span
+.overlay-txt {
+    text-align: center;
+    position: relative;
+    top: -20px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* .slideshow div span
 {
     position: absolute;
     left: 10px;
@@ -479,14 +463,17 @@ p .section-text {
     color: #888;
     font-size: 11px;
     padding: 6px 10px;
-}
+} */
 
 #slideshow_navigation
 {
-    margin: 1em 0 .25em 0;
+    list-style-type: none;
+    margin-left: 1%;
+    margin-right: 1%;
     padding: 0;
     overflow: hidden;
-    width: 960px;
+    margin-bottom: 2%;
+    max-width: 10%;
 }
 
 #slideshow_navigation li
@@ -494,6 +481,7 @@ p .section-text {
     float: left;
     margin: 0;
     padding: 0;
+    
 }
 
 #slideshow_navigation li:last-child
@@ -504,9 +492,9 @@ p .section-text {
 #slideshow_navigation img
 {
     cursor: pointer !important;
-    float: left;
-    margin: 0 10px 10px 0;
-    width: 110px;
+    aspect-ratio: 16/9;
+    width: 100%;
+    height: auto;
     opacity: .6;
     -webkit-transition: all .5s ease-in-out;
     -moz-transition: all .5s ease-in-out;
@@ -514,8 +502,25 @@ p .section-text {
     transition: all .5s ease-in-out;
 }
 
-#slideshow_navigation li.active img,
-#slideshow_navigation li:hover img
+.nav-container {
+    max-width: 100%;
+}
+
+.wrappable {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    -webkit-align-items: center;
+    align-items: center;
+      margin-right: -0.625rem;
+    margin-bottom: -0.625rem;
+}
+
+#slideshow_navigation img.active,
+#slideshow_navigation img:hover
 {
     opacity: 1;
 }
@@ -525,24 +530,30 @@ p .section-text {
     color: white;
 }
 
-/*............................................................ Video Section*/
-
-/* colors text white */
-
-#video-text {
+.photo_warning {
     color: white;
+    text-align: center;
 }
+
+/*............................................................ Video Section*/
 
 /* makes video centered and responsive */
 
 
 .video {
-    aspect-ratio: 16 / 9;
-    width: 100%;
+    aspect-ratio: 16/9;
+    position: relative;
+    width: 75%;
+    height: auto;
+    margin-right: 0px;
 }
 
 
 /*............................................................ Social Footer */
+
+.footer {
+    text-align: center;
+}
 
 /* basic font settings */
 
@@ -868,3 +879,199 @@ input .email-box {
     }
 
 }
+
+.container-75 {
+    margin-left: 12.5%;
+    margin-right: 12.5%;
+    display: block;
+    justify-content: center !important;
+}
+
+.row {
+    justify-content: center !important;
+    display: flex;
+}
+
+/* Band Style Code - Start */
+.member-col {
+    float: left;
+    width: 50%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+  }
+
+  .collab-col {
+    float: left;
+    width: 33.3333%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+  }
+  
+  @media screen and (max-width: 650px) {
+    .member-col, .collab-col {
+      width: 100%;
+      display: block;
+    }
+  }
+  
+  .member-card, .collab-card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  .member-container, .collab-container {
+    padding: 0 16px;
+  }
+
+  .member-container h2, .collab-container h2 {
+    font-family: "Ti_Serif" !important;
+    text-align: center;
+  }
+  
+  .member-container::after, .collab-container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+/* Band Style Code - End */
+
+
+/* Calendar Style Code - Start */
+icon {
+    font-family:fontawesome;
+}
+
+.cal {
+  padding:1em;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%; 
+  justify-content: center;
+}
+.cal-heading {
+    color:white;
+    padding-top: 3%;
+    text-shadow:0 2px 2px rgba(0,0,0,.5);
+    text-align: center;
+}
+.cal-event {
+    background:rgba(228,241,254,.7);
+    padding:1em 0;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    border-bottom:1px solid white;
+    display:flex;
+    justify-content:flex-start;
+    align-items:center;
+    width: 500px;
+}
+
+.cal-event-tile {
+      background: #455f20;
+      color:white;
+      text-align:center;
+      width:3em;
+      height:3em;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      flex-wrap:wrap;
+      padding:.2em;
+      margin-right:1em;
+      margin-left: 10px;
+      flex-shrink:0;
+      border-radius:.5em;
+      box-shadow:0 2px 5px rgba(0,0,0,.1);
+}
+      
+.cal-event-tile-date, .cal-event-tile-month {
+    width:100%;
+    line-height:1em;
+    margin:0;
+    padding:0;
+}
+.cal-event-tile-date {
+    font-size:1.5em;
+}
+.cal-event-tile-month {
+    font-size:1.1em;
+}
+.cal-event-title {
+    font-size:1.2em;
+    margin:0.5em 0;
+    color:#455f20;
+}
+.cal-event-map {
+    display:inline-block;
+    color:#455f20;
+    border:1px solid #455f20;
+    text-align:center;
+    padding:.1em 1em;
+    border-radius:.2em;
+    text-decoration:none;
+    margin-top:.5em;
+}
+
+.cal-event-map:hover {
+    background:#455f20;
+    color:white;
+    border:1px solid #455f20;
+}
+
+.cal-event-location, .cal-event-time {
+    font-weight:500;
+    margin:.2em 0;
+    display:flex;
+    justify-content:flex-start;
+    align-items:center;
+    color:#777;
+    
+    icon {
+    width:1.2em;
+    display:inline-block;
+    text-align:center;
+    margin-right:.5em;
+    }
+}
+
+.cal-event-location a {
+    color:#777;
+}
+
+/* Calendar Style Code - End */
+
+
+.booking-container button {
+    background-color: #455f20;
+    font-family: "Ti_Serif";
+    border-color: #455f20;
+    margin-bottom: 2%;
+}
+
+.booking-container button:hover, .booking-container button:active, .booking-container button:focus, .booking-container button:hover:active {
+    background-color: #293b10;
+    border-color: #293b10;
+}
+
+/* Top Button Style Code - Start */
+#topBtn {
+    height: 50px;
+    width: 50px;
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #455f20; /* Set a background color */
+    color: #bc9423; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    border-radius: 50%; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+  }
+  
+  #topBtn:hover {
+    background-color: #bc9423; /* Add a dark-grey background on hover */
+    color: #455f20;
+  }
+/* Top Button Style Code - End */

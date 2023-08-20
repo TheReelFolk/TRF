@@ -1,546 +1,592 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en-us" ng-app="myApp">
 
-<head>
-    <!--meta-->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!--title-->
-    <title>The Reel Folk: Irish Trad Music</title>
-    
-    <!--bootstrap CSS-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://kit.fontawesome.com/a68b89d0dd.js" crossorigin="anonymous"></script>
+    <head>
+        <!--meta-->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!--title-->
+        <title>The Reel Folk: Irish Trad Music</title>
 
-    <!--Google fonts-->
-    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+        <!-- Favicon -->
+        <link rel="icon" type="image/x-icon" href="images/gold_logo.PNG">
+        
+        <!--bootstrap CSS-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://kit.fontawesome.com/a68b89d0dd.js" crossorigin="anonymous"></script>
 
+        <!--Google fonts-->
+        <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
 
-    <!--custom CSS-->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/grid.css" type="text/css" media="screen, projection">
-</head>
+        <!-- Font Awesome -->
+        <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"  type='text/css'>
+        
+        <!--custom CSS-->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/grid.css" type="text/css" media="screen, projection">
+    </head>
 
-<body id="top">
-    <nav class="navbar navbar-default navbar-static-top">
-        <!--navbar-->
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <div id="mobile-nav" class="navbar-brand visible-xs active"><a href="index.html">The Reel Folk</a></div>
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
-                     <span class="sr-only">Toggle navigation</span>
-                     <span class="icon-bar"></span>
-                     <span class="icon-bar"></span>
-                     <span class="icon-bar"></span>
-                 </button>
+    <body id="top" ng-controller="MainController">
+        <!-- Navbar Start -->
+        <nav class="navbar navbar-default navbar-static-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <div id="mobile-nav" class="navbar-brand visible-xs active"><a href="index.html">The Reel Folk</a></div>
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#band">Band</a></li>
+                        <li><a href="#gigs">Gigs</a></li>
+                        <li><a href="#outreach">Outreach</a></li>
+                        <li><a href="#music">Music</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#video">Video</a></li>
+                    </ul>
+                </div>
             </div>
-            <div id="navbar" class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li><a href="#band">Band</a></li>
-                    <li><a href="#gigs">Gigs</a></li>
-                    <li><a href="#music">Music</a></li>
-                    <li><a href="#gallery">Gallery</a></li>
-                    <li><a href="#video">Video</a></li>
-                </ul>
+        </nav>
+        <!-- Navbar End -->
+
+        <!-- Cover Image/Logo Start -->
+        <div class="container-fluid callout-container">
+            <div class="opaque-overlay">&nbsp;</div>
+            <!-- Callout -->
+            <div class="row">
+                <div class="col-xs-12">
+                    <section class="callout jumbotron text-center">
+                        <br><br>
+                        <img class=" img-logo center-block" alt="logo" src=" ./images/gold_logo.png" />
+                        <br><br>
+
+                        </p>
+                    </section>
+                </div>
             </div>
         </div>
-    </nav>
-    <div class="container-fluid callout-container">
-        <div class="opaque-overlay">&nbsp;</div>
-        <!-- Callout -->
-        <div class="row">
-            <div class="col-xs-12">
-                <section class="callout jumbotron text-center">
-                    <br><br>
-                    <img class=" img-logo center-block" alt="logo" src=" ./images/logo.png" />
-                    <br><br>
+        <!-- Cover Image/Logo End -->
 
-                    </p>
+
+
+        <!-- Band Start -->
+        <div class="container-wrapper">
+            <div class="container-wrapper mission-container">
+                <section id="band">
+                    <!-- Band Bio/Mission Statement Start -->
+                    <div class="page-header">
+                        <h2 class="text-title">
+                            <!-- UPDATES: Change Bio Band / Mission statement text below -->
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute 
+                            irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
+                            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
+                            deserunt mollit anim id est laborum.
+                        </h2>
+                        <br>
+                        <hr class="default">
+                    </div>
+                    <!-- Band Bio/Mission Statement End -->
+
+
+                    <!-- Band Member Section Start -->
+                    <div class="container-75 band-container content-container">
+                        <div class="page-header">
+                            <h1 class="text-title">Featuring</h1>
+                            <hr class="block-divider block-divider--black">
+                        </div>
+                        <br>
+                        <!-- Row 1 of Members Start -->
+                        <div class="row">
+                            <!-- Sofie Start -->
+                            <div class="member-col">
+                              <div class="member-card">
+                                <img src="portraits/sofie.jpg" alt="Sofie" style="width:100%">
+                                <div class="member-container">
+                                  <h2>Sofie</h2>
+                                  <p>
+                                    <!-- UPDATES: Change Sofie Bio text below -->
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute 
+                                    irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
+                                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
+                                    deserunt mollit anim id est laborum.
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- Sofie End -->
+
+                            <!-- Sam Start -->
+                            <div class="member-col">
+                                <div class="member-card">
+                                    <img src="portraits/sam.jpg" alt="Sam" style="width:100%">
+                                    <div class="member-container">
+                                    <h2>Sam</h2>
+                                    <p>
+                                        <!-- UPDATES: Change Sam Bio text below -->
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+                                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute 
+                                        irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
+                                        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
+                                        deserunt mollit anim id est laborum.
+                                    </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Sam End -->
+                        </div>
+                        <!-- Row 1 of Members End -->
+
+                        <!-- Row 2 of Members Start -->
+                        <div class="row">
+                            <!-- Chris Start -->
+                            <div class="member-col">
+                                <div class="member-card">
+                                    <img src="portraits/chris.jpg" alt="Chris" style="width:100%">
+                                    <div class="member-container">
+                                        <h2>Chris</h2>
+                                        <p>
+                                        <!-- UPDATES: Change Chris Bio text below -->
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+                                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute 
+                                        irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
+                                        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
+                                        deserunt mollit anim id est laborum.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Chris End -->
+
+                            <!-- Fourth Start -->
+                            <div class="member-col">
+                                <div class="member-card">
+                                    <img src="portraits/comingSoon.jpg" alt="Fourth" style="width:100%">
+                                    <div class="member-container">
+                                        <h2>Fourth</h2>
+                                        <p>
+                                            <!-- UPDATES: Change Fourth Bio text below -->
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+                                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute 
+                                            irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
+                                            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
+                                            deserunt mollit anim id est laborum.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Fourth End -->
+                        </div>
+                        <!-- Row 2 of Members End -->
+
+                    </div>
+                    <!-- Band Member Section End -->
+
+
+                    <!-- Collaborator Section Start -->
+                    <div class="container-75 ">
+                        <div class="page-header">
+                            <h1 class="text-title">Collaborators</h1>
+                            <hr class="block-divider block-divider--black">
+                        </div>
+                        <br>
+                        <div class="row">
+                            <!-- Collab 1 Start -->
+                            <div class="collab-col">
+                              <div class="collab-card">
+                                <img src="portraits/comingSoon.jpg" alt="Collab 1" style="width:100%">
+                                <div class="collab-container">
+                                  <h2>Collaborator 1</h2>
+                                  <p>
+                                    <!-- UPDATES: Change Collaborator Bio text below -->
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute 
+                                    irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
+                                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
+                                    deserunt mollit anim id est laborum.
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- Collab 1 End -->
+
+                            <!-- Collab 2 Start -->
+                            <div class="collab-col">
+                                <div class="collab-card">
+                                    <img src="portraits/comingSoon.jpg" alt="Collab 2" style="width:100%">
+                                    <div class="collab-container">
+                                        <h2>Collaborator 2</h2>
+                                        <p>
+                                        <!-- UPDATES: Change Collaborator Bio text below -->
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+                                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute 
+                                        irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
+                                        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
+                                        deserunt mollit anim id est laborum.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Collab 2 End -->
+
+                            <!-- Collab 3 Start -->
+                            <div class="collab-col">
+                                <div class="collab-card">
+                                    <img src="portraits/comingSoon.jpg" alt="Collab 3" style="width:100%">
+                                    <div class="collab-container">
+                                        <h2>Collaborator 3</h2>
+                                        <p>
+                                        <!-- UPDATES: Change Collaborator Bio text below -->
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+                                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute 
+                                        irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
+                                        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
+                                        deserunt mollit anim id est laborum.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Collab 3 End -->
+  
+
+                           
+                        </div>
+                    </div>
+                    <!-- Collaborator Section End -->
                 </section>
             </div>
         </div>
-        <!-- /.callout -->
-    </div>
-    <div class="container-wrapper">
-
-        <div class="container-wrapper mission-container">
-            <hr class="default">
-            <!-- Band -->
-            <section id="mission">
-
-                <div class="page-header">
-                    <h2 class="text-title">Musicians providing a variety of Irish trad, fantasy, and Folk music to players and appreciators across the Rocky Mountains</h2>
-                    <br>
-                    <hr class="default">
-
-        </div>
-        <div class="container band-container content-container">
-            <!-- Band -->
-            <section id="band">
-
-                        <div class="page-header">
-
-                            <h1 class="text-title">Featuring</h1>
-                        </div>
+        <!-- Band End -->
 
 
-                    <br>
-                <div class="row">
-                    <div class="col-xs-12 col-md-6">
-                        <div class="media band-member">
-                            <div class="media-left">
-                                <img src=" ./portraits/sofie.jpg" alt="Reva" class="img-circle media-object" height=200 width=200>
-                            </div>
-<!--                            <div class="media-body">-->
-<!--                                <blockquote class="quote">-->
-<!--                                    <p>Local legend</p>-->
-<!--                                    <footer>Reva - <cite title="Twitter">Fiddle</cite></footer>-->
-<!--                                </blockquote>-->
-<!--                            </div>-->
-                        </div>
-                    </div>
-                <div class="col-xs-12 col-md-6">
-                    <div class="media band-member">
-                        <div class="media-left ">
-                            <img src=" ./portraits/sam.jpg" alt="Sam" class="img-circle media-object" height=200 width=200>
-                        </div>
-<!--                        <div class="media-body">-->
-<!--                            <blockquote class="quote">-->
-<!--                                <p>Classically trained in violin, Sam is a multi-instrumentalist who shreds on the banjo, guitar, mandolin, and octave mando. When he’s not nailing riffs, he captures moments with his [insert cool camera name here]-->
-<!--                                    on [insert cool film type here]-->
-<!--                                </p>-->
-<!--                                <footer>Sam - <cite title="Twitter">Mandolin, Banjo</cite></footer>-->
-<!--                            </blockquote>-->
-<!--                        </div>-->
-                    </div>
-                </div>
-                </div>
-
-
-
-                    <div class="col-xs-12 col-md-6">
-                        <div class="media band-member">
-                            <div class="media-left ">
-                                <img src=" ./portraits/chris.jpg" alt="Chris" class="img-circle media-object" height=200 width=200>
-                            </div>
-<!--                            <div class="media-body">-->
-<!--                                <blockquote class="quote">-->
-<!--                                    <p>"I will honor your spine with a walk across it. Down peasant!"</p>-->
-<!--                                    <footer>Chris - <cite title="Twitter">Bouzouki</cite></footer>-->
-<!--                                </blockquote>-->
-<!--                            </div>-->
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-md-6">
-                        <div class="media band-member">
-                            <div class="media-left">
-                                <img src=" ./portraits/sofie.jpg" alt="Sofie" class="img-circle media-object" height=200 width=200>
-                            </div>
-<!--                            <div class="media-body">-->
-<!--                                <blockquote class="quote">-->
-<!--                                    <p>Sofie, the most beautiful band manager in the world.</p>-->
-<!--                                    <footer>Sofie - <cite title="Twitter">Bass</cite></footer>-->
-<!--                                </blockquote>-->
-<!--                                <br>-->
-<!--                            </div>-->
-                        </div>
-                    </div>
-                    <div class="row">
-
-                        <div class="row">
-
-                </div>
-                    </div>
-            </section>
-        </div>
-        <!-- /.band -->
-    </div>
-    <div class="container-wrapper gigs-container">
-        <div class="gig-opaque-overlay">&nbsp;</div>
-        <div class="container-fluid  content-container ">
-            <!-- Gigs -->
+        <!-- Gigs Start -->
+        <!-- UPDATES: Do NOT change anything below; Edit Gig Info in ang.js file -->
+        <div class="container-wrapper gigs-container">
             <section id="gigs">
-                <div class="row">
-                    <div class="col-xs-12">
-                        <div class="page-header">
-                            <h1 class="text-title white-title">Gigs</h1>
-                            <p class=" gigs-text text-muted">Join us live! </p>
-                            <br>
+                <h1 class="text-title cal-heading">Gigs - Join Us Live</h1>
+                <hr class="block-divider block-divider--white">
+                <div class="cal">
+                    <div class="cal-event col-lg-4" ng-repeat="event in getGigs() ">
+                        <div class="cal-event-tile">
+                            <div class="cal-event-tile-date">{{ event.day }}</div>
+                            <div class="cal-event-tile-month">{{ getMonthName(event.month) }}</div>
                         </div>
+                        <div class="cal-event-desc">
+                            <div class="cal-event-title">
+                                {{ event.title }} 
+                            </div>
+                            <div class="cal-event-time">
+                                <icon>&#xf017;</icon>&ensp;{{ getFullDateTime(event) }}
+                            </div>
+                            <div class="cal-event-location">
+                                <icon>&#xf041;</icon>&ensp;
+                                <div class="cal-event-location-content">
+                                    <a href="{{getMap(event)}}" target="_blank">
+                                        {{event.location}}
+                                    </a>
+                                        
+                                </div>
+                            </div>
+                            <a class="cal-event-map" href="{{event.link}}" target="_blank">More Information</a>
+                        </div> 
                     </div>
                 </div>
-                <div class="row gigs-section">
-                    <div class="col-xs-12 col-md-12 ">
-                        <div class="media">
-                            <div class="gigs-table text-center">
-                                <table class="table gigs-table ">
-                                    <thead>
-                                    </thead>
-                                    <tbody class="text-center">
-                                        <tr class=" visible-sm visible-md visible-lg">
-<!--                                            <td class="soldout">28/12/17</td>
-                                            <td class="soldout">Brooklyn, New York</td>
-                                            <td class="soldout"> Beacon Theatre</td>
-                                            <td class="dead-link soldout">
-                                                <h4><span class="label label-danger">Sold Out! </span></h4>
-                                            </td>
-                                        </tr>
-                                        <tr>-->
-                                            <td>01/27/23</td>
-                                            <td>Barn Dance</td>
-                                            <td>Utah State Hospital Chapel</td>
-                                            <td>Provo</td>
-                                            <td>7:30</td>
-                                            <td><a target="_blank" href="https://calendar.google.com/calendar/event?action=TEMPLATE&amp;tmeid=NjRxajJjMW82MWozMGI5amM0b2o0YjlrNjBwajhiYjE3NHJtMmI5bmNjcWplZHI0Y2RnajRwMWc3MCA1djc0dm9pMHEzOHZpc2p0M3F2ajhiOWVtZ0Bn&amp;tmsrc=5v74voi0q38visjt3qvj8b9emg%40group.calendar.google.com">More Info</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td>02/07/23</td>
-                                            <td>Edison Recording Studio Open Mic</td>
-                                            <td>Grove Station</td>
-                                            <td>Pleasant Grove</td>
-                                            <td>6:00</td>
-                                            <td><a target="_blank" href="https://grovestationpg.com"> More Info</a></td>
-
-                                        </tr>
-                                        <tr>
-                                            <td>02/11/23</td>
-                                            <td>Valentine's Dinner</td>
-                                            <td>Evermore Fantasy Park</td>
-                                            <td>Pleasant Grove</td>
-                                            <td>5:00, 6:30</td>
-                                            <td><a target="_blank" href="https://www.evermore.com/winter/valentines-day"> Buy Tickets</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td>02/14/23</td>
-                                            <td>Valentine's Dinner</td>
-                                            <td>Evermore Fantasy Park</td>
-                                            <td>Pleasant Grove</td>
-                                            <td>5:00, 6:30</td>
-                                            <td><a target="_blank" href="https://www.evermore.com/winter/valentines-day"> Buy Tickets</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td>02/18/23</td>
-                                            <td>Book Store Birthday</td>
-                                            <td>Printed Garden</td>
-                                            <td>Union Park</td>
-                                            <td>1:00-3:00</td>
-                                            <td><a target="_blank" href="https://www.theprintedgarden.com"> More Info</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td>03/03/23/</td>
-                                            <td>Small Concert Series</td>
-                                            <td>Davis Arts Council</td>
-                                            <td>Layton</td>
-                                            <td>6:00, 8:00</td>
-                                            <td><a target="_blank" href="https://www.davisarts.org/show/the-reel-folk-8-p-m/"> More Info</a></td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                                <br>
-                            </div>
-                            <div class="booking-container text-center">
-                                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#bookingModal">Book Now</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <!-- <div class="booking-container text-center">
+                    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#bookingModal">Book Now</button>
+                </div> -->
             </section>
-            <!-- /.gigs -->
         </div>
-    </div>
-    <div class="container-wrapper music-container">
-        <div class="container-fluid  content-container">
-            <!-- Music -->
-            <section id="music">
-                <div class="row">
+        <!-- Gigs End -->
+
+        <!-- Outreach Start -->
+        <div class="container-wrapper outreach-container">
+            <div class="container-fluid">
+                <section id="outreach">
+                    <div class="page-header">
+                        <h1 class="text-title">Outreach</h1>
+                        <hr class="block-divider block-divider--black">
+                    </div>
                     <br>
-                    <div class="col-xs-12">
-                        <div class="page-header">
-                            <h2 class="text-title">Music</h2>
-                            <hr class="block-divider block-divider--black">
-                            <p class=" text-muted"> A selection of our most popular songs</p>
-                        </div>
-
-                    <div class="col-xs-12 col-md-6 col-md-offset-3">
-                        <div class="media">
-                            <div class=" audio-player text-center">
-
-                                    <iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/track=1980626797/size=large/bgcol=ffffff/linkcol=e99708/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://thereelfolk.bandcamp.com/track/inisheer">Inisheer by The Reel Folk</a></iframe>
-                                <iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/track=2392460220/size=large/bgcol=ffffff/linkcol=e99708/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://thereelfolk.bandcamp.com/track/ocean-road-kesh">Ocean - Road - Kesh by The Reel Folk</a></iframe>
-                                <iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/track=1753533783/size=large/bgcol=ffffff/linkcol=e99708/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://thereelfolk.bandcamp.com/track/maggie-in-the-woods-britches-sean-ryans">Maggie in the Woods - Britches - Sean Ryan&#39;s by The Reel Folk</a></iframe>
+                    <div>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4 col-sm-4">
+                                <!-- UPDATES: Add Outreach text below -->
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute 
+                                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
+                                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
+                                deserunt mollit anim id est laborum.
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute 
+                                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
+                                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
+                                deserunt mollit anim id est laborum.
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute 
+                                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
+                                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
+                                deserunt mollit anim id est laborum.
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute 
+                                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
+                                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
+                                deserunt mollit anim id est laborum.
                             </div>
-
+                            <div class="col-lg-4 col-md-4 col-sm-4">
+                                <img src="portraits/comingSoon.jpg" style="width:100%">
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-lg-4 col-md-4 col-sm-4">
+                                <img src="portraits/comingSoon.jpg" style="width:100%">
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-4">
+                                <!-- UPDATES: Add Outreach text below -->
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute 
+                                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
+                                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
+                                deserunt mollit anim id est laborum.
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute 
+                                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
+                                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
+                                deserunt mollit anim id est laborum.
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute 
+                                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
+                                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
+                                deserunt mollit anim id est laborum.
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute 
+                                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
+                                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
+                                deserunt mollit anim id est laborum.
+                            </div>
                         </div>
                         <br>
+                        <hr class="default">
                     </div>
-
-                    </div>
-                    </div>
-            </section>
-            <!-- /.music -->
+                </section>
+            </div>
         </div>
-    </div>
-    <div class="container-wrapper gallery-container">
-        <div class="opaque-overlay">&nbsp;</div>
-        <div class="container-fluid content-container">
+        <!-- Outreach End -->
+
+
+       <!-- Music Start -->
+        <div class="container-wrapper music-container">
+            <div class="container-fluid">
+                <section id="music">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="page-header">
+                                <h1 class="text-title">Music</h1>
+                                <hr class="block-divider block-divider--black">
+                                <br />
+                                <p class="text-muted"> A selection of our most popular songs</p>
+                            </div>
+
+                            <div class="col-xs-12 col-md-6 col-md-offset-3">
+                                <div class="media">
+                                    <div class="audio-player text-center">
+                                        <iframe style="border: 0; width: 600px; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/track=1980626797/size=large/bgcol=ffffff/linkcol=455f20/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://thereelfolk.bandcamp.com/track/inisheer">Inisheer by The Reel Folk</a></iframe>
+                                        <iframe style="border: 0; width: 600px; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/track=2392460220/size=large/bgcol=ffffff/linkcol=455f20/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://thereelfolk.bandcamp.com/track/ocean-road-kesh">Ocean - Road - Kesh by The Reel Folk</a></iframe>
+                                        <iframe style="border: 0; width: 600px; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/track=1753533783/size=large/bgcol=ffffff/linkcol=455f20/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://thereelfolk.bandcamp.com/track/maggie-in-the-woods-britches-sean-ryans">Maggie in the Woods - Britches - Sean Ryan&#39;s by The Reel Folk</a></iframe>
+                                    </div>
+                                </div>
+                                <br>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <!-- Music End -->
+
+
+        <!-- Gallery Start -->
+        <!-- UPDATES: Do NOT change anything below; Edit Images in ang.js file -->
+        <div class="container-wrapper gallery-container">
             <section id="gallery">
                 <div class="row">
                     <div class="col-xs-12">
                         <div class="page-header">
-                            <h2 class="text-title white-title">Gallery</h2>
+                            <h1 class="text-title white-title">Gallery</h1>
                             <hr class="block-divider block-divider--white">
-                            <p id="gallery-text" class=" text-muted"> See our gallery</p>
                             <br>
                         </div>
                     </div>
-                    <hr>
-
-                    <h2 id="photos">Photos</h2>
-
-
-                    <div class="slideshow" data-simple-slider>
-                        <div><img src="slideshow/1.jpg" title="Photo by Shirley Lam"><span>Photo by Shirley Lam</span></div>
-                        <div><img src="slideshow/2.jpg" title="Photo by Shirley Lam"><span>Photo by Shirley Lam</span></div>
-                        <div><img src="slideshow/3.jpg" title="Photo by Shirley Lam"><span>Photo by Shirley Lam</span></div>
-                        <div><img src="slideshow/4.jpg" title="Photo by Shirley Lam"><span>Photo by Shirley Lam</span></div>
-                        <div><img src="slideshow/5.jpg" title="Photo by Shirley Lam"><span>Photo by Shirley Lam</span></div>
-                        <div><img src="slideshow/6.jpg" title="Photo by Shirley Lam"><span>Photo by Shirley Lam</span></div>
-                        <div><img src="slideshow/7.jpg" title="Photo by Shirley Lam"><span>Photo by Shirley Lam</span></div>
-                        <div><img src="slideshow/9.jpg" title="Photo by Shirley Lam"><span>Photo by Shirley Lam</span></div>
-                        <div><img src="slideshow/10.jpg" title="Photo by Shirley Lam"><span>Photo by Shirley Lam</span></div>
-                        <div><img src="slideshow/12.jpg" title="Photo by Shirley Lam"><span>Photo by Shirley Lam</span></div>
-                        <div><img src="slideshow/13.jpg" title="Photo by Shirley Lam"><span>Photo by Shirley Lam</span></div>
-                        <div><img src="slideshow/14.jpg" title="Photo by Shirley Lam"><span>Photo by Shirley Lam</span></div>
-                        <div><img src="slideshow/15.jpg" title="Photo by Shirley Lam"><span>Photo by Shirley Lam</span></div>
-                        <div><img src="slideshow/17.jpg" title="Photo by Shirley Lam"><span>Photo by Shirley Lam</span></div>
-                        <div><img src="slideshow/19.jpg" title="Photo by Shirley Lam"><span>Photo by Shirley Lam</span></div>
-
+                </div>
+                <div class="row">
+                    <div class="slideshow-container" ng-repeat="slide in getSlides()">
+                        <div class="slides">
+                            <img ng-src="{{getTrustedSrc(slide)}}">
+                            <p class="overlay-txt">{{slide.attr}} | {{slide.loc}}</p>
+                        </div>
                     </div>
-    <ul id="slideshow_navigation">
-        <li><img src="slideshow/1.jpg" title="Photo by Shirley Lam"></li>
-        <li><img src="slideshow/2.jpg" title="Photo by Shirley Lam"></li>
-        <li><img src="slideshow/3.jpg" title="Photo by Shirley Lam"></li>
-        <li><img src="slideshow/4.jpg" title="Photo by Shirley Lam"></li>
-        <li><img src="slideshow/5.jpg" title="Photo by Shirley Lam"></li>
-        <li><img src="slideshow/6.jpg" title="Photo by Shirley Lam"></li>
-        <li><img src="slideshow/7.jpg" title="Photo by Shirley Lam"></li>
-        <li><img src="slideshow/9.jpg" title="Photo by Shirley Lam"></li>
-        <li><img src="slideshow/10.jpg" title="Photo by Shirley Lam"></li>
-        <li><img src="slideshow/12.jpg" title="Photo by Shirley Lam"></li>
-        <li><img src="slideshow/13.jpg" title="Photo by Shirley Lam"></li>
-        <li><img src="slideshow/14.jpg" title="Photo by Shirley Lam"></li>
-        <li><img src="slideshow/15.jpg" title="Photo by Shirley Lam"></li>
-        <li><img src="slideshow/17.jpg" title="Photo by Shirley Lam"></li>
-        <li><img src="slideshow/19.jpg" title="Photo by Shirley Lam"></li>
+                </div>
 
-    </ul>
-
-
+                <div class="row nav-container">
+                    <div class="wrappable">
+                        <ul id="slideshow_navigation" ng-repeat="slide in getSlides()" ng-init="$last && showSlides(1)">
+                            <li><img class="demo" ng-src="{{getTrustedSrc(slide)}}" ng-click="currentSlide(slide.index)"></li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
                     <p class="photo_warning">All photos are copyright their photographers, all rights reserved. Reuse is only permitted with permission. Please do not use one of these photos for a flyer without asking the photographer first and crediting them.</p>
-
-                    <hr>
-                </div>
-
-
-            </section>
-        </div>
-    </div>
-    <div class="container-wrapper video-container">
-        <div class="container-fluid content-container">
-            <!-- Video -->
-            <section id="video">
-                <div class="row">
-                    <div class="col-xs-12">
-                        <div class="page-header">
-                            <h2 class="text-title white-title">Video</h2>
-                            <hr class="block-divider block-divider--white">
-                            <p id="video-text" class=" text-muted"> Auld Lang Sine</p>
-                            <br>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-12">
-                        <div style="text-align: center;">
-                            <iframe  class="video" src="https://www.youtube.com/embed/s4sak2cVTSY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                        </div>
-                    </div>
                 </div>
             </section>
-            <!-- /.video -->
         </div>
-    </div>
-    <div class="container-wrapper social-container">
-        <footer>
-            <div class="container-fluid content-container ">
-                <!-- Social -->
-                <div class="row">
-                    <div class="col-xs-12">
-                        <div class="page-header">
-                            <h2 class="text-title social-title">Follow The Reel Folk</h2>
+        <!-- Gallery End -->
+
+
+
+
+
+        <!-- Video Start -->
+        <div class="container-wrapper">
+            <div class="container-fluid">
+                <section id="video">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="page-header">
+                                <h1 class="text-title">Video</h1>
+                                <hr class="block-divider block-divider--black">
+                                <br />
+                                <p id="video-text" class="text-muted">Auld Lang Syne</p>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <iframe class="video" src="https://www.youtube.com/embed/s4sak2cVTSY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <!-- Video End -->
+
+        <br />
+        <hr>
+
+
+        <!-- Footer Start -->
+        <div class="container-wrapper social-container">
+            <footer>
+                <div class="container-fluid">
+                    <!-- Social -->
+                    <div class="row footer">
+                        <div class="col-xs-12">
+                            <h2 class="text-title social-title">Follow Us</h2>
                             <hr class="block-divider block-divider--black">
                             <br>
-                            <div class="elsewhere">
-                                <a href="https://facebook.com/thereelfolk" target="_blank"><i class="fa-brands fa-facebook" style="color: #227227;"></i><</a>
-                                <a href="https://thereelfolk.bandcamp.com" target="_blank"><i class="fa-brands fa-bandcamp" style="color: #227227;"></i><</a>
-                                <a href="https://instagram.com/thereelfolk" target="_blank"><i class="fa-brands fa-instagram" style="color: #227227;"></i><</a>
-                                <a href="https://tiktok.com/@thereelfolk" target="_blank"><i class="fa-brands fa-tiktok" style="color: #227227;"></i></a>
-                                <a href="https://soundcloud.com/thereelfolk/sets" target="_blank"><i class="fa-brands fa-soundcloud" style="color: #227227;"></i><</a>
-                                <a href="https://youtube.com/@thereelfolk" target="_blank"><i class="fa-brands fa-youtube" style="color: #227227;"></i><</a>
-                                 </div>
-                        <br>
-                        <p class="text-muted text-center">The Reel Folk 2023 </p>
-                        <br>
-                        <p class="text-center"><a id="back" href="#top">Back to top</a></p>
+                            <a href="https://facebook.com/thereelfolk" target="_blank"><i class="fa-brands fa-facebook" style="color: #227227;"></i></a>
+                            &ensp;
+                            <a href="https://thereelfolk.bandcamp.com" target="_blank"><i class="fa-brands fa-bandcamp" style="color: #227227;"></i></a>
+                            &ensp;
+                            <a href="https://instagram.com/thereelfolk" target="_blank"><i class="fa-brands fa-instagram" style="color: #227227;"></i></a>
+                            &ensp;
+                            <a href="https://tiktok.com/@thereelfolk" target="_blank"><i class="fa-brands fa-tiktok" style="color: #227227;"></i></a>
+                            &ensp;
+                            <a href="https://soundcloud.com/thereelfolk/sets" target="_blank"><i class="fa-brands fa-soundcloud" style="color: #227227;"></i></a>
+                            &ensp;
+                            <a href="https://youtube.com/@thereelfolk" target="_blank"><i class="fa-brands fa-youtube" style="color: #227227;"></i></a>
+                            <br>
+                            <p class="text-muted text-center">The Reel Folk | 2023 </p>
+                            <br>
+                        </div>
                     </div>
+                    <!-- /.social -->
                 </div>
-                <!-- /.social -->
-            </div>
-            </div>
-        </footer>
-    </div>
-    <div class="modal fade" id="bookingModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <button onclick="topFunction()" id="topBtn" title="Go to top"><i class="fa-solid fa-angle-up"></i></button>
+            </footer>
+        </div>
+        <!-- Footer End -->
+
         <!-- Modal -->
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title" id="myModalLabel">Book The Monkees!</h4>
-                </div>
-                <div class="modal-body">
-                    <form>
-                        <div class="form-group">
-                            <label for="name">Full Name*</label>
-                            <input type="text" class="form-control" id="name" placeholder="Full Name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email Address*</label>
-                            <input type="email" class="form-control" id="email" placeholder="Email" required>
-                            <p class="help-block">We'll never share your email address with anyone</p>
-                        </div>
-                        <div class="form-group">
-                            <label for="event">Event Type*</label>
-                            <select class="form-control" id="event" required>
-                                        <option disabled value="" selected hidden>Select an event type</option>
-                                        <option>Wedding</option>
-                                        <option>Private Function</option>
-                                        <option>Christmas Party</option>
-                                        <option>Corporate Event</option>
-                                        <option>Funeral</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="date">Date*</label>
-                            <input type="date" class="form-control" id="date" required>
-                            <p class="help-block">* Required</p>
-                        </div>
-                        <div class="text-center">
-                            <input class="btn btn-success" type="submit" name="btnADD" id="btnADD" value="Submit Booking" onclick="disableButton(this)"/>
-                        </div> <br>
-                    </form>
+        <!-- <div class="modal fade" id="bookingModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Book The Monkees!</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="name">Full Name*</label>
+                                <input type="text" class="form-control" id="name" placeholder="Full Name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address*</label>
+                                <input type="email" class="form-control" id="email" placeholder="Email" required>
+                                <p class="help-block">We'll never share your email address with anyone</p>
+                            </div>
+                            <div class="form-group">
+                                <label for="event">Event Type*</label>
+                                <select class="form-control" id="event" required>
+                                            <option disabled value="" selected hidden>Select an event type</option>
+                                            <option>Wedding</option>
+                                            <option>Private Function</option>
+                                            <option>Christmas Party</option>
+                                            <option>Corporate Event</option>
+                                            <option>Funeral</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="date">Date*</label>
+                                <input type="date" class="form-control" id="date" required>
+                                <p class="help-block">* Required</p>
+                            </div>
+                            <div class="text-center">
+                                <input class="btn btn-success" type="submit" name="btnADD" id="btnADD" value="Submit Booking" onclick="disableButton(this)"/>
+                            </div> <br>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <script src="js/simpleslider.min.js?v=20220526130700"></script>
-    <script type="text/javascript">
-        // Photo gallery.
-        var slideshow = simpleslider.getSlider({
-            // This plugin works by adjusting a property of the slide when it's active
-            // or inactive. In this case, the `opacity` property is transitioned from 0
-            // to 1 for an active slide.
-            prop: 'opacity',
-            unit: '',
-            init: 0,
-            show: 1,
-            end: 0,
-
-            // Change how many seconds between automatic slide changes.
-            delay: 2.5,
-
-            // Highlight the corresponding thumbnail when a slide changes.
-            onChange: function(prevIndex, nextIndex) {
-                // Turn off 'active' for all thumbnails.
-                document.querySelectorAll('#slideshow_navigation li').forEach(function(thumbnail) {
-                    thumbnail.classList.remove('active');
-                });
-
-                // Turn on 'active' for corresponding thumbnail.
-                var targetThumbnailID = nextIndex + 1;
-                document.querySelector('#slideshow_navigation li:nth-child(' + targetThumbnailID + ')').classList.add('active');
-            },
-        });
-
-        // Change the slide when a thumbnail is clicked.
-        document.querySelectorAll('#slideshow_navigation li').forEach(function(thumbnail,i) {
-            thumbnail.addEventListener('click', function() {
-                slideshow.change(i);
-                slideshow.pause();
-            })
-        });
-    </script>
-
-    <!-- Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-    <script>
-        const slider = document.getElementById('Slideshow');
-        slider.addEventListener('input', handleChange);
+       
+        -->
+       
+       
+        <!-- Angular -->
+        <script src="js/cdnjs.cloudflare.com_ajax_libs_angular.js_1.3.14_angular.min.js"></script>
+        <script src="js/code.angularjs.org_1.3.13_angular-animate.js"></script>
+       
+        <!-- Custom JavaScript -->
+        <script src="js/top.js"></script>
+        <script src="js/ang.js"></script>
 
 
-        function handleChange(e) {
-            const img = document.getElementById("1");
-            const {value, max} = e.target;
-            img.style.width = `${value*max}px`;
-            img.style.height = `${value*max}px`;
-        }
- 
-        function disableButton(button) {
-            button.disabled = true;
-            button.value = "Booking Sent"
-            alert("Booking Sent");
-            button.form.submit();
-        }
-    </script>
-    <script src="js/simpleslider.min.js?v=20220526130700"></script>
-    <script type="text/javascript">
-        // Photo gallery.
-        var slideshow = simpleslider.getSlider({
-            // This plugin works by adjusting a property of the slide when it's active
-            // or inactive. In this case, the `opacity` property is transitioned from 0
-            // to 1 for an active slide.
-            prop: 'opacity',
-            unit: '',
-            init: 0,
-            show: 1,
-            end: 0,
-
-            // Change how many seconds between automatic slide changes.
-            delay: 2.5,
-
-            // Highlight the corresponding thumbnail when a slide changes.
-            onChange: function(prevIndex, nextIndex) {
-                // Turn off 'active' for all thumbnails.
-                document.querySelectorAll('#slideshow_navigation li').forEach(function(thumbnail) {
-                    thumbnail.classList.remove('active');
-                });
-
-                // Turn on 'active' for corresponding thumbnail.
-                var targetThumbnailID = nextIndex + 1;
-                document.querySelector('#slideshow_navigation li:nth-child(' + targetThumbnailID + ')').classList.add('active');
-            },
-        });
-
-        // Change the slide when a thumbnail is clicked.
-        document.querySelectorAll('#slideshow_navigation li').forEach(function(thumbnail,i) {
-            thumbnail.addEventListener('click', function() {
-                slideshow.change(i);
-                slideshow.pause();
-            })
-        });
-    </script>
-</body>
-
+        <!-- Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        
+    </body>
 </html>
